@@ -1,8 +1,7 @@
-# [Project Name]
-## Description
-[Provide a brief overview of your project. What does it do? What problem does it solve?]
+# Python Learning
+## My Artificial Intelligence Improvement while 6 months in local python course CodeSociety
 
-Table of Contents
+### Table of Contents
 Installation
 Usage
 Contributing
