@@ -1,5 +1,5 @@
-#[Project Name]
-Description
+# [Project Name]
+## Description
 [Provide a brief overview of your project. What does it do? What problem does it solve?]
 
 Table of Contents
