@@ -108,3 +108,59 @@ for key in removing_keys:
         person_info.pop(key)
 print(person_info) #why? i understand halfly
 
+"""6) Take 10 integers from keyboard using loop and print their average value on the screen."""
+loop , sum = 0 , 0
+while loop < 10:
+    loop += 1
+    a = int(input("Enter a number: "))
+    sum +=a
+print(f"The avarage of {loop} numbers is {sum/loop}")
+
+"""7) Print multiplication table of 24 using loop"""
+loop = 0
+while loop <= 24:
+    print(f"{loop} * 24 = {loop * 24}")
+    loop +=1
+
+"""8) Factorial of any number n is represented by n! and is equal to 123....(n-1)*n.
+Write a program to calculate factorial of a number.""""
+def formula(number):
+    temp_num = number
+    dustur = ''
+    while temp_num > 0:
+        dustur += str(temp_num) + '*'
+        temp_num -= 1
+    return dustur.strip('*')
+
+def factorial(number):
+    temp_num = number
+    result = 1
+    while temp_num > 0:
+        result *= temp_num
+        temp_num -= 1
+    return result
+
+number = int(input())
+while number > 0:
+    print(f"{number}! = {formula(number)} = {factorial(number)}")
+    number -= 1
+"""9) Write a program that calculates the sum of the digits of a given number. Ask the user to input a number"""
+
+n = int(input("Enter the number please: ")) #we get number from user
+len_of_number = len(str(n)) #finding length of number
+sum = 0
+while len_of_number != 0:
+    sum += n%10
+    n //= 10
+    len_of_number -= 1
+print(sum)
+
+"""10) Write a Python program that takes a string input from the user and counts the number of characters in the string."""
+
+sentence = input()
+count = 0
+number_list = ['0','1','2','3','4','5','6','7','8','9']
+for i in list(sentence):
+    if i in number_list:
+        count += 1
+print(count)
